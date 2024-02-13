@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Confrence Sign Up</title>
+        <style>
+            h1{
+                color: blue;
+                text-align: center;
+                background-color: antiquewhite;
+            }
+            body{
+                background-color: beige;
+            }
+            textarea{
+                width: 70%;
+                height: 60%;
+                background-color: blanchedalmond;
+            }
+            input{
+                background-color: blanchedalmond;
+            }
+        </style>
+    </head>
+    <body>
+        <H1>Confrence Registration</H1>
+    </body>
+    <form action="thankyou.html" method="Post">
+        <!-- Full Name -->
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <!-- Type of Attendence-->
+        <h3>Type of Attendence</h3>
+        <input type="radio" id="virtual" name="Attendence">
+        <label for="virtual">Virtual</label><br>
+        <input type="radio" id="inperson" name="Attendence">
+        <label for="inperson">In-Person</label>
+        <!--Preffered Sessions-->
+        <h3>Preffered Sessions</h3>
+        <input type="checkbox" id="webdev" name="webdev">
+        <label for="webdev">Web Developement</label> <br>
+        <input type="checkbox" id="cloud" name="cloud">
+        <label for="cloud">Cloud Computing</label><br>
+        <input type="checkbox" id="ai" name="ai">
+        <label for="ai">Artificial Inteligence</label><br>
+        <input type="checkbox" id="cyber" name="cyber">
+        <label for="cyber">Cyber Security</label><br>
+
+        <!-- T shirt size-->
+        <h3>T-shirt size</h3>
+        <select style="border-radius:20%;background-color: brown;" id="size" name="size">
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="large">large</option>
+        </select><br><br>
+        
+        <!-- Anything extra info-->
+        <h3>Additional Info</h3>
+        <textarea id="additional" name="additional" placeholder="Please input any additional information "></textarea><br><br><br><br>
+        
+        <!-- Submit -->
+        <input style="border-radius:30%;color: black;background-color: brown;" type="submit" value="Confirm Submission">
+
+
+
+    </form>
+</html>
